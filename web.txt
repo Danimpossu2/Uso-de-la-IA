@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cómo Usar la Inteligencia Artificial</title>
-
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          crossorigin="anonymous"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f4f4f4;
       margin: 0;
       padding: 0;
       color: #333;
     }
-
     header {
       background-color: #1a73e8;
       color: white;
       padding: 1.5rem;
       text-align: center;
     }
-
     section {
       padding: 2rem;
       max-width: 900px;
@@ -37,15 +27,12 @@
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-
     h1, h2 {
       color: #1a73e8;
     }
-
     ul {
       line-height: 1.6;
     }
-
     .tip {
       background: #e7f3ff;
       border-left: 5px solid #1a73e8;
@@ -53,7 +40,6 @@
       margin-top: 1rem;
       border-radius: 5px;
     }
-
     .demo-area {
       margin-top: 2rem;
       padding: 1rem;
@@ -61,7 +47,6 @@
       border: 1px solid #cce;
       border-radius: 8px;
     }
-
     input, button, textarea {
       width: 100%;
       padding: 0.8rem;
@@ -71,7 +56,6 @@
       border-radius: 5px;
       box-sizing: border-box;
     }
-
     button {
       background-color: #1a73e8;
       color: white;
@@ -79,18 +63,15 @@
       cursor: pointer;
       margin-top: 1rem;
     }
-
     button:hover {
       background-color: #155ab6;
     }
-
     footer {
       text-align: center;
       padding: 1rem;
       background-color: #eee;
       margin-top: 2rem;
     }
-
     iframe {
       width: 100%;
       height: 315px;
@@ -102,65 +83,52 @@
 </head>
 <body>
 
-  <header>
-    <h1>Cómo Usar la Inteligencia Artificial</h1>
-  </header>
+<header>
+  <h1>Cómo Usar la Inteligencia Artificial</h1>
+</header>
 
-  <section>
-    <h2>¿Qué es la Inteligencia Artificial?</h2>
-    <p>La inteligencia artificial (IA) permite a las máquinas aprender, razonar y tomar decisiones. Se usa en áreas como salud, educación, negocios, arte y mucho más.</p>
+<section>
+  <h2>¿Qué es la Inteligencia Artificial?</h2>
+  <p>La inteligencia artificial (IA) permite a las máquinas aprender, razonar y tomar decisiones. Se usa en áreas como salud, educación, negocios, arte y mucho más.</p>
 
-    <!-- Google AdSense Bloque -->
-    <ins class="adsbygoogle"
-         style="display:block; text-align:center;"
-         data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+  <h2>Ejemplos de Herramientas de IA</h2>
+  <ul>
+    <li><a href="https://chat.openai.com/" target="_blank" rel="noopener">ChatGPT</a> – Para generar texto, ideas o programar.</li>
+    <li><a href="https://www.canva.com/" target="_blank" rel="noopener">Canva con IA</a> – Para diseñar imágenes automáticamente.</li>
+    <li><a href="https://www.deepl.com/translator" target="_blank" rel="noopener">DeepL</a> – Traducción automática de alta calidad.</li>
+  </ul>
 
-    <h2>Ejemplos de Herramientas de IA</h2>
-    <ul>
-      <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a> – Para generar texto, ideas o programar.</li>
-      <li><a href="https://www.canva.com/" target="_blank">Canva con IA</a> – Para diseñar imágenes automáticamente.</li>
-      <li><a href="https://www.deepl.com/translator" target="_blank">DeepL</a> – Traducción automática de alta calidad.</li>
-    </ul>
+  <div class="tip">
+    💡 Consejo: Puedes combinar varias herramientas para lograr tareas más complejas.
+  </div>
 
-    <div class="tip">
-      💡 Consejo: Puedes combinar varias herramientas para lograr tareas más complejas.
-    </div>
+  <h2>Video Explicativo</h2>
+  <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" title="¿Qué es la Inteligencia Artificial?" allowfullscreen></iframe>
 
-    <h2>Video Explicativo</h2>
-    <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" title="¿Qué es la Inteligencia Artificial?"></iframe>
+  <h2>Prueba una Demostración</h2>
+  <div class="demo-area">
+    <label for="userInput">¿Qué quieres que haga la IA?</label>
+    <textarea id="userInput" rows="3" placeholder="Ej. Crear una historia, resumir un texto, hacer un logo..."></textarea>
+    <button onclick="simularRespuesta()">Enviar</button>
+    <div id="output" style="margin-top:1rem; font-style: italic;"></div>
+  </div>
+</section>
 
-    <h2>Prueba una Demostración</h2>
-    <div class="demo-area">
-      <label for="userInput">¿Qué quieres que haga la IA?</label>
-      <textarea id="userInput" rows="3" placeholder="Ej. Crear una historia, resumir un texto, hacer un logo..."></textarea>
-      <button onclick="simularRespuesta()">Enviar</button>
-      <div id="output" style="margin-top:1rem; font-style: italic;"></div>
-    </div>
-  </section>
+<footer>
+  &copy; 2025 Guía IA - Todos los derechos reservados.
+</footer>
 
-  <footer>
-    &copy; 2025 Guía IA - Todos los derechos reservados.
-  </footer>
-
-  <script>
-    function simularRespuesta() {
-      const input = document.getElementById('userInput').value;
-      const output = document.getElementById('output');
-
-      if (input.trim() === "") {
-        output.innerText = "Por favor, escribe una solicitud.";
-        return;
-      }
-
-      output.innerText = `Procesando tu solicitud: "${input}"...\n\n✅ Aquí tienes una respuesta generada por IA (simulada).`;
+<script>
+  function simularRespuesta() {
+    const input = document.getElementById('userInput').value.trim();
+    const output = document.getElementById('output');
+    if (input === "") {
+      output.innerText = "Por favor, escribe una solicitud.";
+      return;
     }
-  </script>
+    output.innerText = `Procesando tu solicitud: "${input}"...\n\n✅ Aquí tienes una respuesta generada por IA (simulada).`;
+  }
+</script>
 
 </body>
 </html>
