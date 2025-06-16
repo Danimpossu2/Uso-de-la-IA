@@ -103,6 +103,7 @@
   </div>
 
   <h2>Video Explicativo</h2>
+  <!-- Video de YouTube embed que sí funciona y no suele bloquear -->
   <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" title="¿Qué es la Inteligencia Artificial?" allowfullscreen></iframe>
 
   <h2>Prueba una Demostración</h2>
